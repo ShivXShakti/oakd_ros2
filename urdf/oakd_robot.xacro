@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="oakd">
+  <xacro:include filename="oakd.urdf.xacro"/>
+  <link name="base_link"/>
+
+  <!-- Call the macros -->
+  <xacro:oakd_link mount_point="front"/>
+  <xacro:oakd_joint x="0.0" y="0.0" z="1.0" roll="0" pitch="0" yaw="0" mount_point="front"/>
+</robot>
